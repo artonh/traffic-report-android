@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Traffic Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="emriAppit">Report Trafik</string>
+    <string name="ZhvilluarNga">FIEK App</string>
+    <string name="about_us">Report Trafik - vz1.0\n\nKy APP është zhvilluar në kuader të lëndës Mobile Device Programing, ideja e prof. Arbnor Halili ndersa eshte zhvilluar nga dy studentet Armend Ukehaxhaj dhe Arton Hoti. \n\n© Arton Hoti\nArti._3@hotmail.com \n\n© Armend Ukehaxhaj\nArmend.u@hotmail.com "</string>
+</resources>
