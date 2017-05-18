@@ -221,8 +221,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action, shfaqet lokacioni yne momental i GPS
         }
-        else if (id == R.id.nav_gallery) {
-            //intenti per historiatin e raportimeve
+        else if (id == R.id.nav_gallery) {//intenti per historiatin e raportimeve
+            Intent Gallery = new Intent(MainActivity.this, Gallery.class);
+            startActivity(Gallery);
         }
         else if (id == R.id.nav_manage) {//intenti per Settings
             Intent Opsione = new Intent(MainActivity.this, Opsione.class);

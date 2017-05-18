@@ -4,43 +4,34 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Opsione extends AppCompatActivity {
 
-    Button btnSound, btnSilent;
+    Button btnSave, btnDefault;
+    EditText etKohaMaximaleAutoDelete;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opsione);
- /*
-        btnSound=(Button)findViewById(R.id.rbSound);
-        btnSilent=(Button)findViewById(R.id.rbSilent);
-        if(Parameters.Audio) {
-            btnSilent.setEnabled(true);
-            btnSound.setEnabled(false);
-        }
-        else{
-            btnSilent.setEnabled(false);
-            btnSound.setEnabled(true);
-        }
 
-        btnSound.setOnClickListener(new View.OnClickListener() {
+        btnSave=(Button)findViewById(R.id.btnSave);
+        btnDefault=(Button)findViewById(R.id.btnDefault);
+        etKohaMaximaleAutoDelete = (EditText) findViewById(R.id.etKohaMaximaleAutoDelete);
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Parameters.Audio=true;
-                btnSilent.setEnabled(true);
-                btnSound.setEnabled(false);
+                Parameters.MinutatSkadues=Integer.valueOf(etKohaMaximaleAutoDelete.getText().toString());
+
             }
         });
-        btnSilent.setOnClickListener(new View.OnClickListener() {
+        btnDefault.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Parameters.Audio=false;
-                btnSilent.setEnabled(false);
-                btnSound.setEnabled(true);
+                Parameters.MinutatSkadues=5;
+                //mund edhe te shfaqim nje njoftim se ju caktuat Default :5
             }
         });
-        //me rujt ne Parameters me ze dhe pa ze
-        //rbSilent.che */
     }
 }
